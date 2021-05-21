@@ -26,3 +26,6 @@ a[class="bad"]{
   color: red;
   text-decoration: line-through;
 }
+button[class="green"]{
+  background-color: green;
+}
