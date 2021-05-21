@@ -28,11 +28,11 @@ function verif(user_rep,good_rep){
     notehtml = document.getElementById("note")
     if (user_rep[x]==good_rep[x]){
       note += 1;
-      rep.innerHTML = "<li><h3><a id='good'>"+user_rep[x]+"</a> est la bonne reponse<h3></li>";
+      rep.innerHTML = "<li><h3><a class='good'>"+user_rep[x]+"</a> est la bonne reponse<h3></li>";
       console.log("Rep ",i," Valide")
     }
     else{
-      rep.innerHTML = "<li><h3><a id='bad'>"+user_rep[x]+"</a> la bonne reponse etait : <a id='good'>"+good_rep[x]+"</a><h3></li>"
+      rep.innerHTML = "<li><h3><a class='bad'>"+user_rep[x]+"</a> la bonne reponse etait : <a class='good'>"+good_rep[x]+"</a><h3></li>"
       console.log("Rep ",i," Pas Valide")
     }
     notehtml.innerHTML = "<h2 id='note'>Note :"+note+"/3</h2>"

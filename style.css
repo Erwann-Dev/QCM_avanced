@@ -19,10 +19,10 @@ div[id="right"]{
   min-width: 5%;
   min-height: 8%;
 }
-a[id="good"]{
+a[class="good"]{
   color: green;
 }
-a[id="bad"]{
+a[class="bad"]{
   color: red;
   text-decoration: line-through;
 }
