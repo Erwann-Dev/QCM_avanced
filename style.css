@@ -1,0 +1,28 @@
+div[id="left"]{
+  margin-top: 5vh;
+  margin-left: 5vh;
+  width: 40vw;
+  float:left
+}
+
+div[id="right"]{
+  margin-top: 5vh;
+  margin-left: 5vh;
+  margin-right: 5vh;
+  width: 40vw;
+  float: left;
+  display: none;
+}
+
+#confirm{
+  border-radius: 50%;
+  min-width: 5%;
+  min-height: 8%;
+}
+a[id="good"]{
+  color: green;
+}
+a[id="bad"]{
+  color: red;
+  text-decoration: line-through;
+}

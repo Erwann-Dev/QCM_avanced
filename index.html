@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<link rel="stylesheet" href="./style.css" />
+		<title>QCM</title>
+		<link rel="icon" type="image/png" href="favicon.png" />
+	</head>
+
+	<body>
+		<div>
+			<div action="" id="left">
+				<h1>Question 1 : <a class="question">xxx</a></h1>
+				<ol>
+					<li type="A">
+						<input type="checkbox" id="rep1a" name="rep1a" />
+						<label for="rep1a">Réponse A</label>
+					</li>
+					<li type="A">
+						<input type="checkbox" id="rep1b" name="rep1b" />
+						<label for="rep1b">Réponse B</label>
+					</li>
+					<li type="A">
+						<input type="checkbox" id="rep1c" name="rep1c" />
+						<label for="rep1c">Réponse C</label>
+					</li>
+				</ol>
+				<h1>Question 2 : <a class="question">xxx</a></h1>
+				<ol>
+					<li type="A">
+						<input type="checkbox" id="rep2a" name="rep2a" />
+						<label for="rep2a">Réponse A</label>
+					</li>
+					<li type="A">
+						<input type="checkbox" id="rep2b" name="rep2b" />
+						<label for="rep2b">Réponse B</label>
+					</li>
+					<li type="A">
+						<input type="checkbox" id="rep2c" name="rep2c" />
+						<label for="rep2c">Réponse C</label>
+					</li>
+				</ol>
+				<h1>Question 3 : <a class="question">xxx</a></h1>
+				<ol>
+					<li type="A">
+						<input type="checkbox" id="rep3a" name="rep3a" />
+						<label for="rep3a">Réponse A</label>
+					</li>
+					<li type="A">
+						<input type="checkbox" id="rep3b" name="rep3b" />
+						<label for="rep3b">Réponse B</label>
+					</li>
+					<li type="A">
+						<input type="checkbox" id="rep3c" name="rep3c" />
+						<label for="rep3c">Réponse C</label>
+					</li>
+				</ol>
+				<button id="confirm" onClick="prog()">Valider</button>
+			</div>
+			<div id="right">
+				<h1>Resultat :</h1>
+        <h2 id="note">Note : /3</h2>
+        <h2>Reponses : </h2>
+        <ol>
+        <p id="rep1"></p>
+        <p id="rep2"></p>
+        <p id="rep3"></p>
+      </ol>
+			</div>
+		</div>
+		<script src="./script.js"></script>
+	</body>
+</html>
