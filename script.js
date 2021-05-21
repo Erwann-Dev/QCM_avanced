@@ -51,5 +51,5 @@ function prog(){
   }
   console.log(rep_user_tot)
   verif(rep_user_tot,good_rep)
-  div_right.style.display = "block";
+  div_right.style.visibility = "visible";
 }
