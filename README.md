@@ -1,1 +1,1 @@
-# Recopier mais soyez pas cramez bande de bâtards
+# Recopiais mais soyez pas cramez bande de bâtards
