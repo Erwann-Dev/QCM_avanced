@@ -73,7 +73,11 @@ function verif(user_rep, good_rep) {
 				'</a><h3></li>';
 			console.log('Rep ', i, ' Pas Valide');
 		}
-		notehtml.innerHTML = "<h2 id='note'>Note :" + note + '/3</h2>';
+		if (note >= good_rep.length/2){
+			notehtml.innerHTML = "<h2 id='note'>Note : <a class='good'>" + note + '/3<a/></h2>';
+		}else{
+			notehtml.innerHTML = "<h2 id='note'>Note : <a class='red'>" + note + '/3<a/></h2>';
+		}
 		console.log(note);
 	}
 }
