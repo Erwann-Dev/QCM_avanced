@@ -14,11 +14,6 @@ div[id="right"]{
   visibility: hidden;
 }
 
-#confirm{
-  border-radius: 50%;
-  min-width: 5%;
-  min-height: 8%;
-}
 a[class="good"]{
   color: green;
 }
@@ -26,6 +21,25 @@ a[class="bad"]{
   color: red;
   text-decoration: line-through;
 }
+button[class="blue"]{
+  background-color: blue;
+}
 button[class="green"]{
   background-color: green;
+}
+button[class="red"]{
+  background-color: red;
+}
+
+button:not(#confirm){
+  width: 25vw;
+  height: 3vh;
+  margin-top: 1vh;
+}
+
+button[id="confirm"]{
+  margin-left: 20vh;
+  border-radius: 50%;
+  min-width: 7vw;
+  min-height: 9vh;
 }

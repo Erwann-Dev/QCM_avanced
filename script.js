@@ -1,20 +1,19 @@
 function traitement_result(nquestion) {
 	repa = document.getElementById('rep' + nquestion + 'a');
-  console.log(repa.classList)
-  if (repa.classList == "green"){
-    repa = true
-  }
+	console.log(repa.classList);
+	if (repa.className == 'blue' || repa.className == 'green' ) {
+		repa = true;
+	}
 	repb = document.getElementById('rep' + nquestion + 'b');
-  console.log(repb.classList)
-  if (repb.classList == "green"){
-    repb = true
-  }
+	console.log(repb.classList);
+	if (repb.className == 'blue' || repb.className == 'green' ) {
+		repb = true;
+	}
 	repc = document.getElementById('rep' + nquestion + 'c');
-  console.log(repc.classList)
-  if (repc.classList == "green"){
-    repc = true
-  }
-	var user_rep = '';
+	console.log(repc.classList);
+	if (repc.className == 'blue' || repc.className == 'green' ) {
+		repc = true;
+	}
 	var user_rep = '';
 	if (repa == true) {
 		user_rep = user_rep + 'A';
@@ -25,6 +24,7 @@ function traitement_result(nquestion) {
 	if (repc == true) {
 		user_rep = user_rep + 'C';
 	}
+
 	console.log('Reponse user : ', user_rep);
 	return user_rep;
 }
@@ -36,8 +36,27 @@ function verif(user_rep, good_rep) {
 		if (user_rep[x] == '') {
 			user_rep[x] = 'Pas de reponse';
 		}
+		repa = document.getElementById('rep' + i + 'a');
+		repb = document.getElementById('rep' + i + 'b');
+		repc = document.getElementById('rep' + i + 'c');
 		rep = document.getElementById('rep' + i);
 		notehtml = document.getElementById('note');
+		console.log("consolllle      ",user_rep[x])
+		if (user_rep[x].includes('A') && good_rep[x].includes('A')){
+			repa.className = 'green'
+		}else if (user_rep[x].includes('A')){
+			repa.className = 'red'
+		}
+		if (user_rep[x].includes('B') && good_rep[x].includes('B')){
+			repb.className = 'green'
+		}else if (user_rep[x].includes('B')){
+			repb.className = 'red'
+		}
+		if (user_rep[x].includes('C') && good_rep[x].includes('C')){
+			repc.className = 'green'
+		}else if (user_rep[x].includes('C')){
+			repc.className = 'red'
+		}
 		if (user_rep[x] == good_rep[x]) {
 			note += 1;
 			rep.innerHTML =
@@ -74,12 +93,12 @@ function prog() {
 }
 
 function check(n) {
-  console.log('but' + n)
-  var id = 'rep'+n
+	console.log('but' + n);
+	var id = 'rep' + n;
 	let button = document.getElementById(id);
-	if (button.classList != 'green') {
-		button.classList.add('green');
+	if (button.classList != 'blue' ) {
+		button.className = 'blue';
 	} else {
-		button.classList.remove('green');
+		button.className = '';
 	}
 }
