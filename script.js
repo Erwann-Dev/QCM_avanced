@@ -1,17 +1,17 @@
 function traitement_result(nquestion) {
 	repa = document.getElementById('rep' + nquestion + 'a');
 	console.log(repa.classList);
-	if (repa.className == 'blue' || repa.className == 'green' ) {
+	if (repa.className == 'blue' || repa.className == 'green' || repa.className == 'red' ) {
 		repa = true;
 	}
 	repb = document.getElementById('rep' + nquestion + 'b');
 	console.log(repb.classList);
-	if (repb.className == 'blue' || repb.className == 'green' ) {
+	if (repb.className == 'blue' || repb.className == 'green' || repb.className == 'red' ) {
 		repb = true;
 	}
 	repc = document.getElementById('rep' + nquestion + 'c');
 	console.log(repc.classList);
-	if (repc.className == 'blue' || repc.className == 'green' ) {
+	if (repc.className == 'blue' || repc.className == 'green' || repc.className == 'red'  ) {
 		repc = true;
 	}
 	var user_rep = '';
@@ -96,7 +96,13 @@ function check(n) {
 	console.log('but' + n);
 	var id = 'rep' + n;
 	let button = document.getElementById(id);
-	if (button.classList != 'blue' ) {
+	if (button.className == 'red'){
+		button.className = '';
+	}
+	else if (button.className == 'green'){
+		button.className = '';
+	}
+	else if (button.className == '' ) {
 		button.className = 'blue';
 	} else {
 		button.className = '';
